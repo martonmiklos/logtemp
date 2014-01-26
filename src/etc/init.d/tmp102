@@ -1,0 +1,9 @@
+#!/bin/sh /etc/rc.common
+# Copyright (C) 2006-2011 OpenWrt.org
+
+START=50
+
+start() {
+       echo  tmp102 0x48 > /sys/class/i2c-dev/i2c-0/device/new_device
+       /usr/sbin/httpd -p 80 -h /root
+}

@@ -1,0 +1,1 @@
+*/1 * * * * /usr/bin/logtemp /root/temp_log.csv
